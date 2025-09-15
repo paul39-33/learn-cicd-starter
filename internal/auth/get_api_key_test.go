@@ -28,7 +28,7 @@ func TestGetAPI_Fail(t *testing.T) {
 	req.Set("Content-Type", "application/json")
 
 	_, err := GetAPIKey(req)
-	if err != nil {
+	if err == nil {
 		t.Fatalf("expecting an error, but no error instead")
 	}
 }
