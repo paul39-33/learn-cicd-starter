@@ -16,7 +16,7 @@ func TestGetAPI_Success(t *testing.T) {
 	if err != nil {
 		t.Fatalf("GetAPIKey error: %v", err)
 	}
-	if apikey != "SOME_API_VALUE"{
+	if apikey != "SOME_API_VALUE" {
 		t.Errorf("error expected: %v, got %v", "SOME_API_VALUE", apikey)
 	}
 }
